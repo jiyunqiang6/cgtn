@@ -1,0 +1,72 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://aivideodb.mysql.database.chinacloudapi.cn/cgtn-video?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: videoadmin
+    password: cgtnmysql)1027
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8008/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        
+knife4j:
+  enable: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+    show-extensions: true
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.cgtn.workshop.socialplatform
+  default-flat-param-object: false
+
+logging:
+  level:
+    com.netflix: warn
+
+social:
+  facebook:
+#    client-id: '1032314974648862'
+#    client-secret: '31ef5ba83d41d859d880a230114ddcdf'
+    client-id: '1359968671271482'
+    client-secret: '1c24fe0e4fdef85c27abbab54cb090cf'
+    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/facebook/callback'
+  twitter:
+#    client-id: 'TVhhWWg4ZTJXWlBFWUJWWDIyTkk6MTpjaQ'
+#    client-secret: 'TJ3h5qv5OgDAA77NXa0xlNZO8yzFuc1MCwF2kHWDpzhebWEatF'
+    client-id: 'UmlMMURjU29ONWNfY2lwYi00Q2M6MTpjaQ'
+    client-secret: '9AGcmW8CrRL88fQnIb7g7DpXoKuKz_odIw24Pn6duv1NVHjJ12'
+    consumer-key: 'qMD443IYpoSfYyiONLTjactz2'
+    consumer-secret: 'AniyVvlm0efdfObhOd2DOWoqN1EadzOkEMja4apJvHHkiKxBHV'
+    access-token: '1704421137914990592-7BvVQ3nL3Vagt5ZjHAiy7pjhgQHsdB'
+    access-token-secret: 'AmvTEpCNpbBfByQASXvfq4TbeS6Pt264l8tNhqAKH7kAt'
+    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/twitter/callback'
+  tiktok:
+#    client-key: 'awihm0gdoh7bofjy'
+#    client-secret: '9xDHSIMNjhbBpVy6LcfAXMxNY5vVwM4y'
+    client-key: 'awxi209y0qj3xupr'
+    client-secret: 'TDiAmggrlGvM3zZMnCJ1hSzz6Za584v0'
+    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/tiktok/callback'
+  youtube:
+#    client-id: '76123728679-i3k84c7n32oin9hiobqlphh0m4l19ips.apps.googleusercontent.com'
+#    client-secret: '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'
+    client-id: '593715536604-b23p6smk1rd3edaup3nk97pa3ttn5626.apps.googleusercontent.com'
+    client-secret: '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'
+#    client-id: '364810997726-5jfc47trq6nieg25npb5ef34deshmgn7.apps.googleusercontent.com'
+#    client-secret: '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'
+    auth-uri: "https://accounts.google.com/o/oauth2/auth"
+    token-uri: "https://oauth2.googleapis.com/token"
+    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/youtube/callback'
