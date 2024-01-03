@@ -60,6 +60,7 @@ social:
     client-key: 'awxi209y0qj3xupr'
     client-secret: 'TDiAmggrlGvM3zZMnCJ1hSzz6Za584v0'
     redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/tiktok/callback'
+    privacy-level: 'SELF_ONLY'
   youtube:
 #    client-id: '76123728679-i3k84c7n32oin9hiobqlphh0m4l19ips.apps.googleusercontent.com'
 #    client-secret: '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'
