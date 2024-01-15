@@ -41,7 +41,7 @@ aws:
     #aws翻译最大输入文本字符数
     max-length: 10000
   transcribe:
-    region: us-east-1
+    region: ap-southeast-1
     bucketName: sg-videofactory-test
     srtPath: shenzhoushuma/subtitles
 youdao:
