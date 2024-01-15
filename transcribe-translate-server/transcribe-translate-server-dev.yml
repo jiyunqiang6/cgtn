@@ -42,8 +42,8 @@ aws:
     max-length: 10000
   transcribe:
     region: us-east-1
-    bucketName: sg-videofactory-test-shenzhoushuma
-    srtPath: shenzhoushuma
+    bucketName: sg-videofactory-test
+    srtPath: shenzhoushuma/subtitles
 youdao:
   translate:
     url: https://openapi.youdao.com/api
