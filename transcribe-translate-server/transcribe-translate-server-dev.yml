@@ -14,7 +14,7 @@ aes:
 azure:
   open-ai:
     #openAi提示词最大字符数
-    prompt-max-length: 3900
+    prompt-max-length: 2000
     prompt-prefix: 将以下JSON数组中每个JSON对象的text字段的%s意译为%s后放入对应的text2字段中,保持原JSON数组格式和长度不变,每个JSON对象的text2字段都要有对应text字段意译的内容：
 
 google:
