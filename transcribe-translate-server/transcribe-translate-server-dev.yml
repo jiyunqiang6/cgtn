@@ -4,6 +4,15 @@ spring:
     url: jdbc:mysql://aivideodb.mysql.database.chinacloudapi.cn:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
     username: videoadmin
     password: cgtnmysql)1027
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 5000
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 120MB
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
 
@@ -14,7 +23,7 @@ aes:
 azure:
   open-ai:
     #openAi提示词最大字符数
-    prompt-max-length: 3900
+    prompt-max-length: 2000
     prompt-prefix: 将以下JSON数组中每个JSON对象的text字段的%s意译为%s后放入对应的text2字段中,保持原JSON数组格式和长度不变,每个JSON对象的text2字段都要有对应text字段意译的内容：
 
 google:
@@ -30,6 +39,7 @@ google:
     sampleRateHertz: 16000
     audioChannelCount: 2
     bucketName: cgtn-video-test
+    audioPath: audio
   auth:
     file: /home/ec2-user/videofactory/conf/webeye-internal-test-d7b75f898948.json
 
@@ -41,7 +51,7 @@ aws:
     #aws翻译最大输入文本字符数
     max-length: 10000
   transcribe:
-    region: us-east-1
+    region: ap-southeast-1
     bucketName: sg-videofactory-test
     srtPath: shenzhoushuma/subtitles
 youdao:
@@ -99,9 +109,3 @@ management:
     web:
       exposure:
         include: refresh
-
-redis:
-  host: localhost
-  port: 6379
-  database: 0 #Redis数据库索引（默认为0）
-  timeout: 5000 #连接超时时间（毫秒）
