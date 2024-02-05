@@ -4,6 +4,15 @@ spring:
     url: jdbc:mysql://aivideodb.mysql.database.chinacloudapi.cn:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
     username: videoadmin
     password: cgtnmysql)1027
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 5000
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 120MB
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
 
@@ -30,6 +39,7 @@ google:
     sampleRateHertz: 16000
     audioChannelCount: 2
     bucketName: cgtn-video-test
+    audioPath: audio
   auth:
     file: /home/ec2-user/videofactory/conf/webeye-internal-test-d7b75f898948.json
 
@@ -99,9 +109,3 @@ management:
     web:
       exposure:
         include: refresh
-
-redis:
-  host: localhost
-  port: 6379
-  database: 0 #Redis数据库索引（默认为0）
-  timeout: 5000 #连接超时时间（毫秒）
