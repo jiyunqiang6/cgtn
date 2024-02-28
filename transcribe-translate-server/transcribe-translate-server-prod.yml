@@ -1,0 +1,111 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sg-videofactory-prod.cluster-coavkbixiaz8.ap-southeast-1.rds.amazonaws.com:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: shenzhoushumaprod
+    password: GAHb^Ca4YdpJ
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 5000
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 120MB
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+
+aes:
+  # key和iv必须是16位
+  key: c57e4b6ea64debc7
+  iv: a97a26054868a3f7
+azure:
+  open-ai:
+    #openAi提示词最大字符数
+    prompt-max-length: 2000
+    prompt-prefix: 将以下JSON数组中每个JSON对象的text字段的%s意译为%s后放入对应的text2字段中,保持原JSON数组格式和长度不变,每个JSON对象的text2字段都要有对应text字段意译的内容：
+
+google:
+  translate:
+    #谷歌翻译模型可选值base、nmt
+    model: base
+  speech:
+    initialRetryDelay: 500
+    retryDelayMultiplier: 2
+    maxRetryDelay: 5000
+    rpcTimeoutMultiplier: 1.0
+    totalTimeout: 24
+    sampleRateHertz: 16000
+    audioChannelCount: 2
+    bucketName: cgtn-video-test
+    audioPath: audio
+  auth:
+    file: /videofactory/google-secret.json
+
+aws:
+  translate:
+    retrySleepTime: 500
+    retryTimes: 5
+    region: us-west-2
+    #aws翻译最大输入文本字符数
+    max-length: 10000
+  transcribe:
+    region: ap-southeast-1
+    bucketName: sg-videofactory-test
+    srtPath: shenzhoushuma/subtitles
+youdao:
+  translate:
+    url: https://openapi.youdao.com/api
+    #有道单次查询最大字符数
+    max-length: 5000
+
+xunfei:
+  transcribe:
+    urlPrefix: https://tongchuan.iflyrec.com
+    initUrl: /SdkAdapter/v1/nonRealTime/initNonRealTimeProcess
+    processUrl: /SdkAdapter/v1/nonRealTime/startNonRealTimeProcess
+    resultUrl: /SdkAdapter/v1/nonRealTime/queryNonRealTimeProcessResult
+  translate:
+    url: https://api.iflyrec.com/trans/v2/translate
+    #讯飞输入文本，中英互译最多支持512个字节（实际测试可到1000），小语种互译最多只支持2000个字节
+    max-length: 1000
+    minor-max-length: 2000
+
+file:
+  temp:
+    path: /videofactory/temp/
+
+nlp:
+  # 分词的时间分割，单位秒
+  timeDivision: 2.0
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://52.77.112.62:8008/eureka
+
+knife4j:
+  enable: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+    show-extensions: true
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.cgtn.workshop.transcribetranslate
+  default-flat-param-object: false
+
+logging:
+  level:
+    com.netflix: warn
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
