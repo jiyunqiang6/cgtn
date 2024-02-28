@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://aivideodb.mysql.database.chinacloudapi.cn:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
-    username: videoadmin
-    password: cgtnmysql)1027
+    url: jdbc:mysql://sg-videofactory-test.coavkbixiaz8.ap-southeast-1.rds.amazonaws.com:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: shenzhoushumatest
+    password: RpRC59#8$SKQ!
   redis:
     host: localhost
     port: 6379
