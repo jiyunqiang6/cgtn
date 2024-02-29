@@ -38,7 +38,7 @@ google:
     totalTimeout: 24
     sampleRateHertz: 16000
     audioChannelCount: 2
-    bucketName: cgtn-video-test
+    bucketName: cgtn-video-prod
     audioPath: audio
   auth:
     file: /videofactory/google-secret.json
@@ -52,7 +52,7 @@ aws:
     max-length: 10000
   transcribe:
     region: ap-southeast-1
-    bucketName: sg-videofactory-test
+    bucketName: sg-videofactory-prod
     srtPath: shenzhoushuma/subtitles
 youdao:
   translate:
