@@ -43,7 +43,7 @@ social:
 #    client-secret: '31ef5ba83d41d859d880a230114ddcdf'
     client-id: '1359968671271482'
     client-secret: '1c24fe0e4fdef85c27abbab54cb090cf'
-    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/facebook/callback'
+    redirect-uri: 'https://platform.ivideofactory.com/social-platform/facebook/callback'
   twitter:
 #    client-id: 'TVhhWWg4ZTJXWlBFWUJWWDIyTkk6MTpjaQ'
 #    client-secret: 'TJ3h5qv5OgDAA77NXa0xlNZO8yzFuc1MCwF2kHWDpzhebWEatF'
@@ -53,13 +53,13 @@ social:
     consumer-secret: 'AniyVvlm0efdfObhOd2DOWoqN1EadzOkEMja4apJvHHkiKxBHV'
     access-token: '1704421137914990592-7BvVQ3nL3Vagt5ZjHAiy7pjhgQHsdB'
     access-token-secret: 'AmvTEpCNpbBfByQASXvfq4TbeS6Pt264l8tNhqAKH7kAt'
-    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/twitter/callback'
+    redirect-uri: 'https://platform.ivideofactory.com/social-platform/twitter/callback'
   tiktok:
 #    client-key: 'awihm0gdoh7bofjy'
 #    client-secret: '9xDHSIMNjhbBpVy6LcfAXMxNY5vVwM4y'
     client-key: 'awxi209y0qj3xupr'
     client-secret: 'TDiAmggrlGvM3zZMnCJ1hSzz6Za584v0'
-    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/tiktok/callback'
+    redirect-uri: 'https://platform.ivideofactory.com/social-platform/tiktok/callback'
     privacy-level: 'SELF_ONLY'
   youtube:
 #    client-id: '76123728679-i3k84c7n32oin9hiobqlphh0m4l19ips.apps.googleusercontent.com'
@@ -70,4 +70,4 @@ social:
 #    client-secret: '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'
     auth-uri: "https://accounts.google.com/o/oauth2/auth"
     token-uri: "https://oauth2.googleapis.com/token"
-    redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/youtube/callback'
+    redirect-uri: 'https://platform.ivideofactory.com/social-platform/youtube/callback'
