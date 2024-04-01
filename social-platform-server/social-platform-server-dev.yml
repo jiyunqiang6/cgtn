@@ -64,8 +64,10 @@ social:
   youtube:
 #    client-id: '76123728679-i3k84c7n32oin9hiobqlphh0m4l19ips.apps.googleusercontent.com'
 #    client-secret: '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'
-    client-id: '593715536604-b23p6smk1rd3edaup3nk97pa3ttn5626.apps.googleusercontent.com'
-    client-secret: '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'
+#    client-id: '593715536604-b23p6smk1rd3edaup3nk97pa3ttn5626.apps.googleusercontent.com'
+#    client-secret: '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'
+    client-id: '955798060872-ogp5q09v2qd9oson0r8n0gt1pn8uqo4e.apps.googleusercontent.com'
+    client-secret: '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'
 #    client-id: '364810997726-5jfc47trq6nieg25npb5ef34deshmgn7.apps.googleusercontent.com'
 #    client-secret: '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'
     auth-uri: "https://accounts.google.com/o/oauth2/auth"
