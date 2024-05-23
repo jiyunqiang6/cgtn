@@ -41,10 +41,10 @@ social:
   facebook:
 #    client-id: '1032314974648862'
 #    client-secret: '31ef5ba83d41d859d880a230114ddcdf'
-#    client-id: '1359968671271482'
-#    client-secret: '1c24fe0e4fdef85c27abbab54cb090cf'
-    client-id: '389235610578412'
-    client-secret: '43e0aae28d6c5bbce860e22e601a73b3'
+    client-id: '1359968671271482'
+    client-secret: '1c24fe0e4fdef85c27abbab54cb090cf'
+#    client-id: '389235610578412'
+#    client-secret: '43e0aae28d6c5bbce860e22e601a73b3'
     redirect-uri: 'https://platform-test.ivideofactory.com/social-platform/facebook/callback'
   twitter:
 #    client-id: 'UmlMMURjU29ONWNfY2lwYi00Q2M6MTpjaQ'
