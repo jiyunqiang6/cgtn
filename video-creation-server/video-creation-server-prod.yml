@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://sg-videofactory-prod.cluster-coavkbixiaz8.ap-southeast-1.rds.amazonaws.com:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
+    username: shenzhoushumaprod
+    password: GAHb^Ca4YdpJ
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.8.36:8008/eureka
+      
+knife4j:
+  enable: true
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+    show-extensions: true
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.cgtn.workshop.videocreation
+  default-flat-param-object: false
+ 
+aws-customized-platform:
+  host: https://45ftv2qmo4.execute-api.us-east-1.amazonaws.com/prod
+aws:
+  s3:
+    bucket: sg-videofactory-test
+    region: ap-southeast-1
+    folder: shenzhoushuma/crop/
+aes:
+  key: c57e4b6ea64debc7
+  iv: a97a26054868a3f7
+file:
+  temp:
+    path: /videofactory/temp/
