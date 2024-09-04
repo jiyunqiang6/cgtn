@@ -32,7 +32,11 @@ aws:
   s3:
     bucket: sg-videofactory-test
     region: ap-southeast-1
-    folder: shenzhoushuma/crop/
+    crop-folder: shenzhoushuma/crop/
+  slice-s3:
+    bucket: ai-video-editing-637423353769-us-east-1-bucket
+    region: us-east-1
+    upload-folder: upload/
 aes:
   key: c57e4b6ea64debc7
   iv: a97a26054868a3f7
