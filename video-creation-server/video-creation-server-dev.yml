@@ -4,7 +4,10 @@ spring:
     url: jdbc:mysql://sg-videofactory-test.coavkbixiaz8.ap-southeast-1.rds.amazonaws.com:3306/cgtn-video?characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=GMT%2B8
     username: shenzhoushumatest
     password: RpRC59#8$SKQ!
-
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB 
 eureka:
   client:
     service-url:
