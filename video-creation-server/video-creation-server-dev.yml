@@ -30,7 +30,7 @@ springdoc:
   default-flat-param-object: false
  
 aws-customized-platform:
-  host: https://45ftv2qmo4.execute-api.us-east-1.amazonaws.com/prod
+  host: https://lemb5a59sh.execute-api.us-east-1.amazonaws.com/prod
 aws:
   s3:
     bucket: sg-videofactory-test
