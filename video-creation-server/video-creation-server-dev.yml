@@ -12,7 +12,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://127.0.0.1:8008/eureka
-      
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+        
 knife4j:
   enable: true
 springdoc:
@@ -31,6 +37,7 @@ springdoc:
  
 aws-customized-platform:
   host: https://lemb5a59sh.execute-api.us-east-1.amazonaws.com/prod
+  model-id: anthropic.claude-3-sonnet-20240229-v1:0
 aws:
   s3:
     bucket: sg-videofactory-test
