@@ -36,7 +36,7 @@ springdoc:
   default-flat-param-object: false
  
 aws-customized-platform:
-  host: https://lemb5a59sh.execute-api.us-east-1.amazonaws.com/prod
+  host: https://8m8uon9u5d.execute-api.us-east-1.amazonaws.com/prod
   model-id: anthropic.claude-3-sonnet-20240229-v1:0
 aws:
   s3:
