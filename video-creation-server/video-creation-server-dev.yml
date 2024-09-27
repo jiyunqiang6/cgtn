@@ -38,6 +38,7 @@ springdoc:
 aws-customized-platform:
   host: https://cb3lmjfew4.execute-api.us-east-1.amazonaws.com/prod
   model-id: anthropic.claude-3-sonnet-20240229-v1:0
+  api-key: miRtacjTvE7mijZjDTUs36AeSLMNZAs14yvE4Ay9
 aws:
   s3:
     bucket: sg-videofactory-test
