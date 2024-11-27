@@ -36,17 +36,17 @@ springdoc:
   default-flat-param-object: false
  
 aws-customized-platform:
-  host: https://j3vma7wt9h.execute-api.us-east-1.amazonaws.com/prod
+  host: https://g2cb2f1c1g.execute-api.us-west-2.amazonaws.com/prod
   model-id: anthropic.claude-3-sonnet-20240229-v1:0
-  api-key: w3sqz2xGkV9FHVsJCdHdE9DW6uXZUeIa3hjPPfjQ
+  api-key: YW6WnXtQrwaIHFepVOUy7nVGRpEvt1641nUqSyOh
 aws:
   s3:
     bucket: sg-videofactory-prod
     region: ap-southeast-1
     crop-folder: shenzhoushuma/crop/
   slice-s3:
-    bucket: ai-video-editing-637423353769-us-east-1-bucket
-    region: us-east-1
+    bucket: ai-video-editing-637423353769-us-west-2-bucket
+    region: us-west-2
     upload-folder: upload/
 aes:
   key: c57e4b6ea64debc7
