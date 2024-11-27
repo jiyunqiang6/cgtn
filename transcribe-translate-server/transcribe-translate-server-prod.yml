@@ -25,6 +25,12 @@ azure:
     #openAi提示词最大字符数
     prompt-max-length: 2000
     prompt-prefix: 将以下JSON数组中每个JSON对象的text字段的%s意译为%s后放入对应的text2字段中,保持原JSON数组格式和长度不变,每个JSON对象的text2字段都要有对应text字段意译的内容：
+    # 音频转字幕应用信息
+    connection-point: https://lk-test-swedencentral.openai.azure.com/
+    region: swedencentral
+    secret-key: 7de21df7d2c247218f9ce4ecc306d35d
+    model-name: whisper
+    api-version: 2024-02-01
 
 google:
   translate:
